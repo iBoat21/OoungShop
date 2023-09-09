@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ooung</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- icon form icons8 -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=512&id=wU95tWCsb7Jg&format=png">
+
+    <!-- custom cascading style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navigation zone -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><a class="navbar-brand" href="#"><img class="me-2" width="32"height="32"
+                        src="https://img.icons8.com/external-justicon-flat-justicon/64/external-seal-animal-justicon-flat-justicon.png"
+                        alt="external-seal-animal-justicon-flat-justicon" />ร้านรักตุ๊กตา</a></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">ติดต่อเรา</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active " aria-current="page" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                ร้านค้า
+                            </a>
+                            <ul class="dropdown-menu multi-column columns">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="multi-column-dropdown">
+                                            <li><a href="shop.html" class="dropdown-item">สินค้า</a></li>
+                                            <li><a href="#" class="dropdown-item" id="open-cart">ตะกร้าสินค้า</a></li>
+                                            <li><a href="#" class="dropdown-item" id="open-history">ประวัติการสั่งซื้อ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- modalzone -->
+    <ul class="cart" id="cart-item">
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartModalLabel">ตะกร้าสินค้า</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="cart-items">
+
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="close" data-bs-dismiss="modal">ปิด</button>
+                        <button type="button" class="btn btn-primary" id="checkout">สั่งซื้อ</button>
+                        <button type="button" class="btn btn-danger" id="clear-cart">เคลียร์สินค้าจากตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ul>
+    <!-- main -->
+    <main>
+        <div class="container mt-5">
+            <center>
+                <h2 class="text-white">Shop</h2>
+                <h4>นิ่ม และ นุ่ม</h4>
+
+            </center>
+
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <div class="card border-white shadow">
+                        <img src="https://cf.shopee.co.th/file/1f1c27a25b404e1f2548874ee59d18cd" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Care Bears</h5>
+                            <a class="btn btn-outline-warning add-to-cart" data-price="500" data-name="Care Bears">
+                                <img width="20" height="20" src="https://img.icons8.com/ios/50/add-shopping-cart--v1.png" alt="add-shopping-cart--v1" />Add To Cart
+                            </a>
+                            <p class="price float-end">500 บาท</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-white shadow">
+                        <img src="https://cf.shopee.com.my/file/61ffed9e4f1d17e033b4741b98eb4c19" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">We Bear Bears</h5>
+                            <a class="btn btn-outline-warning add-to-cart" data-price="400" data-name="We Bear Bears"">
+                                <img width="20" height="20" src="https://img.icons8.com/ios/50/add-shopping-cart--v1.png" alt="add-shopping-cart--v1" />Add To Cart
+                            </a>
+                            <p class="price float-end">500 บาท</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-white shadow">
+                        <img src="https://ae01.alicdn.com/kf/Hb4ffbb5e08474f829cc8ea8e685b4875u/Rilakkuma-Plush.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rilakkuma</h5>
+                            <a class="btn btn-outline-warning add-to-cart" data-price="600" data-name="Rilakkuma">
+                                <img width="20" height="20" src="https://img.icons8.com/ios/50/add-shopping-cart--v1.png" alt="add-shopping-cart--v1" />Add To Cart
+                            </a>
+                            <p class="price float-end">500 บาท</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <div class="card border-white shadow">
+                        <img src="https://down-th.img.susercontent.com/file/b952637280f0385818a9f403861b3930_tn" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">My Little Pony</h5>
+                            <a class="btn btn-outline-warning add-to-cart" data-price="500" data-name="My Little Pony">
+                                <img width="20" height="20" src="https://img.icons8.com/ios/50/add-shopping-cart--v1.png" alt="add-shopping-cart--v1" />Add To Cart
+                            </a>
+                            <p class="price float-end">500 บาท</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-white shadow">
+                        <img src="https://st-th-1.byteark.com/assets.punpro.com/contents/i9999/117375321_3626558634047130_7934528279814124536_o.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ตุ๊กตากระรอก</h5>
+                            <a class="btn btn-outline-warning add-to-cart" data-price="400" data-name="ตุ๊กตากระรอก"">
+                                <img width="20" height="20" src="https://img.icons8.com/ios/50/add-shopping-cart--v1.png" alt="add-shopping-cart--v1" />Add To Cart
+                            </a>
+                            <p class="price float-end">500 บาท</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-white shadow">
+                        <img src="https://fastly.4sqi.net/img/general/600x600/72760178_H-3f5KMYJqqAgm6vCLxNA7wAe22iAZ2JNgBt-GITYiM.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ตุ๊กตาแพนกวิ้น</h5>
+                            <a class="btn btn-outline-warning add-to-cart" data-price="500" data-name="ตุ๊กตาแพนกวิ้น">
+                                <img width="20" height="20" src="https://img.icons8.com/ios/50/add-shopping-cart--v1.png" alt="add-shopping-cart--v1" />Add To Cart
+                            </a>
+                            <p class="price float-end">500 บาท</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </main>
+        <!-- footer -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>&copy; doll shop &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="index.js"></script>
+    
+></body>
+
+</html>

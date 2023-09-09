@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kodchasan&family=Mali&display=swap');
+
+* {
+  font-family: 'Itim', cursive;
+  font-family: 'Kodchasan', sans-serif;
+  font-family: 'Mali', cursive;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  pointer-events: none;
+}
+
+.carousel-item img{
+  object-fit: cover;
+  object-position: center;
+  height: 90vh;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .carousel-item img{
+    object-fit: cover;
+    height: 40vh;
+    overflow: hidden;
+  }
+}
+
+.marketing {
+  margin-top: 30px;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  margin-top: 8px;
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.featurette-divider {
+  margin: 2rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+/* .dropdown */
+.dropdown-menu {
+  min-width: 200px;
+}
+
+.dropdown-menu .columns-2 {
+  min-width: 400px;
+}
+
+.dropdown-menu li a {
+
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.multi-column-dropdown {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.multi-column-dropdown li a {
+  display: block;
+  clear: both;
+  color: #333;
+  white-space: normal;
+}
+
+.multi-column-dropdown li a:hover {
+  text-decoration: none;
+  color: #262626;
+  background-color: #999;
+}
+
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 240px !important;
+    overflow-x: hidden;
+  }
+}
+
+.section{
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .section .box{
+    margin-bottom: 24px;
+  }
+}
+.content{
+  padding-left: 10px;
+}
+
+.card:hover{
+  border: none;
+  box-shadow: none;
+}
+
+.btn img{
+  vertical-align:0;
+}
+
+
